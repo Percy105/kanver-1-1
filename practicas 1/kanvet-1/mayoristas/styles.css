@@ -1,0 +1,520 @@
+ /* ============================================
+           RESET Y VARIABLES (heredadas de la web)
+           ============================================ */
+        :root {
+            --primary: #c9b542;
+            --secondary: #03132d;
+            --background: #081425;
+            --card: #10213f;
+            --card-hover: #13294e;
+            --white: #fff;
+            --text: #e8edf5;
+            --text-light: #a9b3c5;
+            --radius: 18px;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            --transition: 0.35s;
+            --fw7: 700;
+            --fw8: 800;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Rubik", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: var(--text);
+            background: var(--background);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            -webkit-tap-highlight-color: transparent;
+        }
+        ul {
+            list-style: none;
+        }
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+            object-fit: contain;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .marca {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* ============================================
+           SCROLLBAR
+           ============================================ */
+        ::-webkit-scrollbar-track {
+            background: #07152d;
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 20px;
+        }
+
+        /* ============================================
+           HEADER (idéntico al de la web principal)
+           ============================================ */
+        .header-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 0;
+            background: rgba(3, 19, 45, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: none;
+        }
+
+        .flexitem {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            color: #f1c40e;
+            font-size: 20.5px;
+        }
+
+        .logo-img {
+            width: 100px;
+        }
+
+        .header-nav a {
+            color: white;
+            transition: 0.3s;
+        }
+        .header-nav a:hover {
+            color: var(--primary);
+        }
+
+        .header-nav nav > ul {
+            line-height: 55px;
+            gap: 2em;
+        }
+
+        .mobile-hide {
+            display: block;
+        }
+
+        /* ============================================
+           HERO MAYORISTA
+           ============================================ */
+        .hero-mayorista {
+            padding: 80px 0 60px;
+            background: linear-gradient(180deg, #03132d 0%, #091d3c 100%);
+            border-bottom: 2px solid rgba(201, 181, 66, 0.15);
+            text-align: center;
+        }
+
+        .hero-mayorista h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            color: white;
+            letter-spacing: 2px;
+        }
+        .hero-mayorista h1 span {
+            color: var(--primary);
+        }
+        .hero-mayorista p {
+            font-size: 1.4rem;
+            color: var(--text-light);
+            max-width: 800px;
+            margin: 1.5rem auto 0;
+        }
+
+        .badge-mayorista {
+            display: inline-block;
+            background: var(--primary);
+            color: var(--secondary);
+            font-weight: 700;
+            padding: 0.5rem 2rem;
+            border-radius: 40px;
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            letter-spacing: 1px;
+        }
+
+        /* ============================================
+           SECCIONES INFORMATIVAS
+           ============================================ */
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: white;
+            position: relative;
+            padding-bottom: 20px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 5px;
+            background: var(--primary);
+            border-radius: 20px;
+        }
+
+        .section-title span {
+            color: var(--primary);
+        }
+
+        .beneficios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin: 3rem 0;
+        }
+
+        .beneficio-card {
+            background: var(--card);
+            border-radius: var(--radius);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        .beneficio-card:hover {
+            transform: translateY(-8px);
+            background: var(--card-hover);
+            box-shadow: 0 0 40px rgba(201, 181, 66, 0.15);
+        }
+
+        .beneficio-card .icon {
+            font-size: 3.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .beneficio-card h3 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .beneficio-card p {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+
+        /* ============================================
+           REQUISITOS / CONDICIONES
+           ============================================ */
+        .requisitos-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .requisito-item {
+            flex: 1 1 280px;
+            background: var(--card);
+            border-radius: var(--radius);
+            padding: 2rem;
+            border-left: 6px solid var(--primary);
+            box-shadow: var(--shadow);
+        }
+
+        .requisito-item h4 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .requisito-item p {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+
+        /* ============================================
+           CATÁLOGO REFERENCIAL (SOLO VISUAL)
+           ============================================ */
+        .catalogo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .catalogo-item {
+            background: var(--card);
+            border-radius: var(--radius);
+            padding: 1.5rem 1rem;
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        .catalogo-item:hover {
+            background: var(--card-hover);
+            transform: scale(1.02);
+        }
+
+        .catalogo-item img {
+            width: 100%;
+            max-height: 180px;
+            object-fit: contain;
+            border-radius: 12px;
+            background: #0a1a2e;
+            padding: 0.5rem;
+        }
+
+        .catalogo-item h4 {
+            color: white;
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+
+        .catalogo-item .ref-precio {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: 0.3rem;
+        }
+
+        .catalogo-item .etiqueta {
+            display: inline-block;
+            background: var(--primary);
+            color: var(--secondary);
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.2rem 1rem;
+            border-radius: 20px;
+            margin-top: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        /* ============================================
+           PREGUNTAS FRECUENTES
+           ============================================ */
+        .faq-list {
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+
+        .faq-item {
+            background: var(--card);
+            border-radius: var(--radius);
+            padding: 1.5rem 2rem;
+            margin-bottom: 1.2rem;
+            border-left: 4px solid var(--primary);
+            transition: var(--transition);
+        }
+        .faq-item:hover {
+            background: var(--card-hover);
+        }
+
+        .faq-item h4 {
+            color: white;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        .faq-item h4 i {
+            color: var(--primary);
+            font-size: 1.4rem;
+        }
+        .faq-item p {
+            color: var(--text-light);
+            margin-top: 0.5rem;
+            padding-left: 2.2rem;
+        }
+
+        /* ============================================
+           BOTÓN DE CONTACTO (VENDEDOR)
+           ============================================ */
+        .contacto-mayorista {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(180deg, #091d3c 0%, #03132d 100%);
+            border-top: 2px solid rgba(201, 181, 66, 0.15);
+            margin-top: 3rem;
+        }
+
+        .contacto-mayorista h2 {
+            font-size: 2.8rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        .contacto-mayorista p {
+            font-size: 1.3rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: #25d366;
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: 700;
+            padding: 1rem 3.5rem;
+            border-radius: 60px;
+            transition: var(--transition);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+        .btn-whatsapp i {
+            font-size: 2.5rem;
+        }
+        .btn-whatsapp:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.5);
+            background: #20b85a;
+        }
+
+        .btn-whatsapp small {
+            font-weight: 400;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* ============================================
+           FOOTER (igual que la web principal)
+           ============================================ */
+        footer {
+            background: #021126;
+            border-top: 1px solid rgba(255, 0, 0, 0.08);
+            padding: 70px 0;
+            margin-top: auto;
+        }
+
+        .footer-info .flexcol {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+        }
+
+        .footer-info ul li a {
+            font-size: 1.25em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: var(--light-bg-color);
+            border-radius: 50%;
+            margin: 0.25em;
+            transition: background-color 0.3s;
+            color: var(--secondary);
+        }
+        .footer-info ul li a:hover {
+            background-color: var(--border-color);
+        }
+
+        .socials ul {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .mini-text {
+            font-size: 14px;
+            color: var(--text-light);
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .logo.last .a-last {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 120px;
+            margin: 0 auto;
+        }
+        .img-last {
+            margin-bottom: 1.5em;
+        }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        @media (max-width: 992px) {
+            .hero-mayorista h1 {
+                font-size: 3rem;
+            }
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.2rem;
+            }
+            .hero-mayorista h1 {
+                font-size: 2.4rem;
+            }
+            .hero-mayorista p {
+                font-size: 1.1rem;
+            }
+            .btn-whatsapp {
+                font-size: 1.4rem;
+                padding: 0.8rem 2.5rem;
+            }
+            .btn-whatsapp i {
+                font-size: 2rem;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+            .mobile-hide {
+                display: block;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-mayorista h1 {
+                font-size: 1.8rem;
+            }
+            .badge-mayorista {
+                font-size: 0.9rem;
+                padding: 0.3rem 1.2rem;
+            }
+            .beneficio-card {
+                padding: 1.5rem;
+            }
+            .requisito-item {
+                padding: 1.2rem;
+            }
+            .btn-whatsapp {
+                font-size: 1.2rem;
+                padding: 0.7rem 1.8rem;
+            }
+        }

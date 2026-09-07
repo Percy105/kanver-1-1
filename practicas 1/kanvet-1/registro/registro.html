@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - KanVet</title>
+    <link rel="stylesheet" href="../normalize/normalize.css">
+    <link rel="stylesheet" href="style-registro.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="checkout-page">
+
+    <!-- ==========================================
+         CONTENEDOR PRINCIPAL
+         ========================================== -->
+    <div class="checkout-container">
+
+        <!-- ===== BOTÓN VOLVER ===== -->
+        <a href="../index/index.html" class="back-to-shop">
+            <i class="fas fa-arrow-left"></i> Seguir comprando
+        </a>
+
+        <!-- ==========================================
+             SECCIÓN ÚNICA: RESUMEN + PAGO
+             ========================================== -->
+        <section id="checkout-section" class="checkout-section active">
+            <div class="checkout-wrapper">
+
+                <!-- Título -->
+                <div class="section-title">
+                    <h2>🛒 <span>Resumen de tu pedido</span></h2>
+                    <p>Revisa los productos y elige tu método de pago</p>
+                </div>
+
+                <div class="checkout-content">
+                    <!-- ==========================================
+                         RESUMEN DEL PEDIDO
+                         ========================================== -->
+                    <div class="checkout-summary">
+                        <h3>
+                            <i class="fas fa-shopping-bag" style="color: var(--primary); margin-right: 10px;"></i>
+                            Productos seleccionados
+                        </h3>
+                        <div id="checkout-items">
+                            <!-- Los productos se cargarán con JavaScript -->
+                            <p style="color: var(--text-light); text-align: center; padding: 20px 0;">
+                                <i class="fas fa-spinner fa-spin"></i> Cargando...
+                            </p>
+                        </div>
+
+                        <!-- Total Grande -->
+                        <div class="grand-total">
+                            <span class="total-label">💰 Total a pagar</span>
+                            <span class="total-amount" id="checkout-total">S/. 0.00</span>
+                        </div>
+                    </div>
+
+                    <!-- ==========================================
+                         MÉTODOS DE PAGO
+                         ========================================== -->
+                    <div class="payment-options" style="margin-top: 0;">
+
+                        <h3 style="color: white; font-size: 20px; font-weight: 700; margin-bottom: 18px; padding-bottom: 12px; border-bottom: 2px solid var(--primary);">
+                            <i class="fas fa-wallet" style="color: var(--primary); margin-right: 10px;"></i>
+                            Métodos de pago
+                        </h3>
+
+                        <!-- ===== TRANSFERENCIA BANCARIA ===== -->
+                        <div class="payment-method selected" id="method-transfer-card">
+                            <div class="method-header">
+                                <input type="radio" name="payment-method" id="method-transfer" value="transferencia" checked>
+                                <label for="method-transfer" class="method-label">
+                                    <span class="method-card">
+                                        <span class="method-icon">🏦</span>
+                                        <span>
+                                            <span class="method-name">Transferencia Bancaria</span>
+                                            <span class="method-badge">Recomendado</span>
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="method-details" id="transfer-details">
+                                <div class="bank-info">
+                                    <div class="bank-item">
+                                        <span class="bank-label">🏛️ Banco</span>
+                                        <span class="bank-value">BCP</span>
+                                    </div>
+                                    <div class="bank-item">
+                                        <span class="bank-label">📋 Tipo de cuenta</span>
+                                        <span class="bank-value">Cuenta Corriente</span>
+                                    </div>
+                                    <div class="bank-item">
+                                        <span class="bank-label">🔢 Número de cuenta</span>
+                                        <span class="bank-value highlight">191-12345678-9</span>
+                                    </div>
+                                    <div class="bank-item">
+                                        <span class="bank-label">🔢 CCI</span>
+                                        <span class="bank-value highlight">002-191-123456789-12</span>
+                                    </div>
+                                    <div class="bank-item">
+                                        <span class="bank-label">👤 Titular</span>
+                                        <span class="bank-value">KANVET S.A.C.</span>
+                                    </div>
+                                    <div class="bank-item">
+                                        <span class="bank-label">📄 RUC</span>
+                                        <span class="bank-value">20601234567</span>
+                                    </div>
+                                </div>
+                                <div class="method-instructions">
+                                    <p>📌<strong>Instrucciones:</strong></p>
+                                    <ol>
+                                        <li>Realiza la transferencia al número de cuenta indicado</li>
+                                        <li>Guarda el comprobante de pago (captura de pantalla)</li>
+                                        <li>Haz clic en <strong>"Enviar pedido a WhatsApp"</strong></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ===== YAPE ===== -->
+                        <div class="payment-method" id="method-yape-card">
+                            <div class="method-header">
+                                <input type="radio" name="payment-method" id="method-yape" value="yape">
+                                <label for="method-yape" class="method-label">
+                                    <span class="method-card">
+                                        <span class="method-icon">📱</span>
+                                        <span>
+                                            <span class="method-name">Yape</span>
+                                            <span class="method-badge yape">Popular</span>
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="method-details" id="yape-details" style="display: none;">
+                                <div class="yape-info">
+                                    <div class="yape-number">
+                                        <span class="yape-label">📱 Número Yape</span>
+                                        <span class="yape-value highlight">987 654 321</span>
+                                    </div>
+                                    <div class="yape-name">
+                                        <span class="yape-label">👤 Titular</span>
+                                        <span class="yape-value">KANVET S.A.C.</span>
+                                    </div>
+                                    <div class="yape-qr">
+                                        <div class="qr-placeholder">
+                                            <i class="fas fa-qrcode" style="font-size: 40px; color: var(--primary);"></i>
+                                            <span>Escanea el código QR</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="method-instructions">
+                                    <p>📌 <strong>Instrucciones:</strong></p>
+                                    <ol>
+                                        <li>Abre la app de Yape en tu celular</li>
+                                        <li>Escanea el código QR o ingresa el número Yape</li>
+                                        <li>Realiza el pago por el monto total</li>
+                                        <li>Guarda el comprobante de pago (captura de pantalla)</li>
+                                        <li>Haz clic en <strong>"Enviar pedido a WhatsApp"</strong></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ===== BOTÓN WHATSAPP ===== -->
+                        <div style="margin-top: 24px;">
+                            <button type="button" id="send-voucher-btn" class="primary-button whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i>
+                                Enviar pedido a WhatsApp
+                                <span class="btn-total-badge" id="btn-whatsapp-total" style="background: rgba(255,255,255,0.15); padding: 4px 14px; border-radius: 20px; font-size: 16px; font-weight: 700;">
+                                    S/. 0.00
+                                </span>
+                            </button>
+                        </div>
+
+                        <!-- Nota importante -->
+                        <div class="payment-note">
+                            <p>
+                                <i class="fas fa-info-circle" style="color: #FFC107;"></i>
+                                <strong>Importante:</strong> Después de realizar el pago, envía tu comprobante por WhatsApp para confirmar tu pedido y coordinar la entrega.
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+<script src="script.js"></script>
+    <!-- ==========================================
+         SCRIPT
+         ========================================== -->
+    
+</body>
+</html>
