@@ -1,12 +1,3 @@
-// ============================================
-// SCRIPT PRINCIPAL - KanVet TIENDA
-// ============================================
-
-// ============================================
-// SCRIPT PRINCIPAL - KanVet TIENDA
-// ============================================
-
-// ===== VARIABLES GLOBALES =====
 let cart = [];
 let notificationTimeout = null;
 
@@ -378,7 +369,7 @@ let currentModalProduct = null;
 // Abrir modal
 function openProductModal(productItem) {
     // Imagen
-    const imgElement = productItem.querySelector('.thumbnail img, .image img');
+    const imgElement = productItem.querySelector('.info img');
     modalImg.src = imgElement ? imgElement.getAttribute('src') : '';
     modalImg.alt = imgElement ? imgElement.alt : 'Producto';
 
@@ -471,20 +462,77 @@ modalBuyBtn.addEventListener('click', function() {
         // Opcional: cerrar modal después de agregar
         // closeProductModal();
     }
-});
+});// ============================================
+// ADAPTAR SECCIÓN .content-gotero COMO PRODUCTO
+// ============================================
+(function adaptGoteroSection() {
+    const goteroSection = document.querySelector('.content-gotero');
+    if (!goteroSection) return;
 
+    // Evitar duplicados si ya se adaptó
+    if (goteroSection.dataset.adapted === 'true') return;
+    goteroSection.dataset.adapted = 'true';
 
+    // Convertir la sección en un .item (para que el modal y el carrito la detecten)
+    goteroSection.classList.add('item');
 
+    // Asignar datos del producto (el modal los usa directamente)
+    goteroSection.dataset.productId = 'gotero-dosificador';
+    goteroSection.dataset.productName = 'Gotero Dosificador';
+    goteroSection.dataset.productPrice = '14.90';
 
+    // Buscar el <a> existente
+    const link = goteroSection.querySelector('a');
 
+    // Crear el contenedor .info (oculto visualmente, solo para el modal)
+    const info = document.createElement('div');
+    info.className = 'info';
+    info.style.display = 'none';   // 👈 NO se ve en la web
 
+    // ✅ Imagen SIEMPRE la de la jeringa (para el modal)
+    const img = document.createElement('img');
+    img.src = '../assets/img/jeringa (1).webp';
+    img.alt = 'Gotero Dosificador';
+    info.appendChild(img);
 
+    // Título (solo para el modal)
+    const h3 = document.createElement('h3');
+    h3.textContent = 'Gotero Dosificador';
+    info.appendChild(h3);
 
+    // Descripción (solo para el modal)
+    const miniText = document.createElement('div');
+    miniText.className = 'mini-text';
+    const p = document.createElement('p');
+    p.textContent = 'Gotero especial para aplicación de productos KanVet.';
+    miniText.appendChild(p);
+    info.appendChild(miniText);
 
+    // Precio (solo para el modal)
+    const priceDiv = document.createElement('div');
+    priceDiv.className = 'price';
+    const span = document.createElement('span');
+    span.className = 'current';
+    span.textContent = 'S/. 14.90';
+    priceDiv.appendChild(span);
+    info.appendChild(priceDiv);
 
+    // Insertar .info dentro del <a>
+    if (link) {
+        link.appendChild(info);
+    } else {
+        goteroSection.appendChild(info);
+    }
 
+    // Botón "Comprar" oculto (solo para que setupBuyButtons lo enganche)
+    if (!goteroSection.querySelector('button[type="button"]')) {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.style.display = 'none';   // 👈 NO se ve en la web
+        btn.textContent = 'Comprar';
+        goteroSection.appendChild(btn);
+    }
 
-
-
-
-
+    // Enlazar los botones de compra (incluye el nuevo botón oculto)
+    setupBuyButtons();
+})();

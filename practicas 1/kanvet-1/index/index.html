@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KanVet - Tienda Alimenticia de Mascotas</title>
 
-   <meta name="description" content="Bienvenido a KanVet. Tienda especializada en alimentos, sustitutos lácteos en polvo, patas de pollo crujientes y goteros dosificadores para perros, gatos y conejos.">
+    <meta name="description" content="Bienvenido a KanVet. Tienda especializada en alimentos, sustitutos lácteos en polvo, patas de pollo crujientes y goteros dosificadores para perros, gatos y conejos.">
     <meta name="keywords" content="sustituto lácteo, patas de pollo crocante, gotero dosificador, tienda de mascotas, KanVet, alimentos para mascotas, perro, gato, conejo">
     <meta name="author" content="KanVet">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
@@ -27,6 +27,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
+   <link rel="preconnect"  href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../normalize/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
@@ -36,29 +39,22 @@
     <link rel="icon" type="image/png" href="../img/logo/trata.png">
 
 </head>
+
 <body id="inicio">
     <div id="page" class="site page-home">
         <header>
             <div class="header-nav">
-                <div class="container">
-                    <div class="wrapper flexitem">
-                        <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
-                        <div class="left flexitem">
-                            <a href="#inicio">
-                                <div class="logo">
-                                    <img src="../img/logo/logo.webp"  class="logo-img"  alt="imagen del logo KanVet" >
-                                </div>
-                            </a>
-                            <nav class="mobile-hide">
-                                <ul class="flexitem second-links">
-                                    <!-- <li><a href="#lacteos">Lacteos</a></li> -->
-                                    <li>
-                                        <a class="list-a" href="../mayoristas/index.html">Visittar Mayoristas</a>
-                                    </li>
-                                </ul>
-                            </nav>
+                <div class="flexitem-nav">
+                    <a href="#inicio">
+                        <div class="logo">
+                            <img src="../img/logo/logo.webp"  class="logo-img"  alt="imagen del logo KanVet" >
                         </div>
-                    </div>
+                    </a>
+                    <ul>
+                        <li>
+                            <a class="list-a" href="../mayoristas/index.html">Comprar al por mayor</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </header>
@@ -101,751 +97,284 @@
                 </div>
             </div>
         </div>
-           
-               
-            
-       
 
-          
-                       
-
-            <!-- <div class="trending">
-                <div class="container">
-                    <div class="wrapper">
-                        <div class="sectop flexitem">
-                            <h2 id="promociones">
-                                <span class="circle"></span>
-                                <span>Promociones</span>
-                            </h2>
-                        </div>
-                        <div class="column">
-                            <div class="flexwrap position">
-                                <div class="row products big">
-                                    <div class="item"
-                                        data-product-id="10" 
-                                        data-product-name="producto en promoción" 
-                                        data-product-price="129.90"
-                                    >
-                                        <div class="offer">
-                                            <p>Sustituto Lacteo</p>
-                                          
-                                        </div>
-                                        <div class="media presentacion">
-                                            <div class="image">
-                                                <a href="#">
-                                                    <img src="../assets/img/teti-perry-sustitulo-lacteo-perro-120g-oferta.jpeg"  loading="lazy"  alt="esto debe ser cambiado en la revision final del proyecto">
-                                                </a>
-                                            </div>
-                                           
-                                        </div>
-                                        <div class="content">
-                                           
-                                            <h3 class="main-links"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, doloribus. Hic tempore deleniti rem consectetur, quam obcaecati natus quaerat voluptates, ipsam eius accusamus fugit molestias eaque architecto soluta cum at quo. Delectus, excepturi. Cumque debitis perferendis illo sunt eos itaque deleniti iste vel iure accusamus, delectus beatae architecto autem voluptas.</a></h3>
-                                            <div class="price">
-                                                <span class="current">s./129.99</span>
-                                             <button type="button">comprar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row products mini second">
-                                    <div class="item"
-                                        data-product-id="11" 
-                                        data-product-name="producto en promoción" 
-                                        data-product-price="29.90">
-                                        <div class="media">
-                                            <div class="thumbnail object-cover">
-                                                <a href="#">
-                                                    <img src="../assets/img/teti-michi-sustituo-lacteo-gato-250g.jpeg" alt="esto debe ser cambiado en la revision final del proyecto"  loading="lazy" >
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="main-links"><a href="#"> Lorem ipsum dolor sit.</a></h3>
-                                            
-                                         
-                                            <div class="mini-text">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, dolor iste rerum quibusdam ut qui accusamus quas, ducimus, quae nisi assumenda dignissimos impedit perferendis sequi recusandae corporis. Ullam, maxime doloremque perferendis a officia saepe eveniet qui ex possimus tempora error cumque suscipit voluptas velit modi impedit quod autem itaque incidunt beatae adipisci rem. Sunt recusandae excepturi beatae iste possimus unde.
-                                                </p>
-                                            </div>
-                                            <div class="price">
-                                                <span class="current">s./29.90</span>
-                 
-                                             <button type="button">comprar</button>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="item"
-                                        data-product-id="12" 
-                                        data-product-name="producto en promoción" 
-                                        data-product-price="29.90">
-                                        <div class="media">
-                                            <div class="thumbnail object-cover">
-                                                <a href="#">
-                                                    <img src="../assets/img/teti-perry-sustitulo-lacteo-perro-120g-oferta.jpeg" alt="esto debe ser cambiado en la revision final del proyecto"  loading="lazy">
-                                                </a>
-                                            </div>
-                                          
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="main-links"><a href="#">Under Armour Men's Tech</a></h3>
-                                            
-                                            <div class="rating">
-                              
-                                                <div class="mini-text">
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas eaque quas voluptate totam odit harum accusantium aut ut tempore. Quod, quo iure! Molestiae est, aperiam necessitatibus ad ex autem dignissimos exercitationem ratione eveniet debitis? Quam quibusdam earum voluptatibus reiciendis nesciunt excepturi magnam laudantium vitae saepe, sit quia error tenetur ut, optio aspernatur cupiditate enim deserunt dolorem repudiandae blanditiis fugit.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="price">
-                                                <span class="current">
-                                                    s./29.90
-                                                </span>
-                                     
-                                             <button type="button">comprar</button>
-                                            </div>
-                                        
-                                        </div>
-                                    </div>
-                                    <div class="item"
-                                        data-product-id="13" 
-                                        data-product-name="producto en promoción" 
-                                        data-product-price="29.90">
-                                        <div class="media">
-                                            <div class="thumbnail object-cover">
-                                                <a href="#">
-                                                    <img src="../assets/img/teti-cony-sustituto-lacteo-conejo-30g.jpeg" alt="esto debe ser cambiado en la revision final del proyecto" >  
-                                                </a>
-                                            </div>
-                                           
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="main-links"><a href="#">Vonanda Velvet Sofa Couch, Mid Century Modern Craftsmanship</a></h3>
-                                            
-                                            <div class="rating">
-                                      
-                                                <div class="mini-text">
-                                                    <p>
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis totam beatae nisi dolorem, distinctio modi recusandae nesciunt, omnis ipsum animi rerum maiores dolorum debitis placeat quam asperiores explicabo exercitationem commodi? In, quas maxime repudiandae saepe eius rem quibusdam facere, illum blanditiis qui laborum optio animi molestiae perspiciatis vero! Laboriosam nostrum magnam optio. Libero asperiores a tempore velit cumque, quisquam magnam!
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="price">
-                                                <span class="current">s./29.90</span>
-                                             <button type="button">comprar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item"
-                                        data-product-id="14" 
-                                        data-product-name="producto en promoción" 
-                                        data-product-price="29.90">
-                                        <div class="media">
-                                            <div class="thumbnail object-cover">
-                                                <a href="#">
-                                                    <img src="../assets/img/teti-michi-sustituo-lacteo-gato-250g.jpeg" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
-                                                </a>
-                                            </div>
-                                           
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="main-links">
-                                                <a href="#">
-                                                    Wireless Headphones Over Ear, Bluetooth Headphones with Microphone
-                                                </a>
-                                            </h3>
-                                            <div class="mini-text">
-                                                    <p>
-                                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis voluptate earum illum amet optio, temporibus sequi sapiente cupiditate sit itaque mollitia sed veritatis praesentium reprehenderit provident nostrum molestias ipsum ad nesciunt quam eos? Velit maxime nesciunt harum. Deleniti, vel. Iste commodi inventore dolorem, hic, praesentium sit veritatis accusantium deserunt officia blanditiis, ratione nesciunt consequuntur quis minima culpa consequatur exercitationem perferendis!
-
-                                                    </p>
-                                                </div>
-                                                <div class="price">
-                                                <span class="current">s./29.90</span>
-                                             <button type="button">comprar</button>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row products mini">
-                                    <div class="item"
-                                        data-product-id="15" 
-                                        data-product-name="producto en promoción" 
-                                        data-product-price="29.90">
-                                        <div class="media">
-                                            <div class="thumbnail object-cover">
-                                                <a href="#">
-                                                    <img src="../assets/img/teti-perry-sustituto-lacteo-perro-250.jpeg" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
-                                                </a>
-                                            </div>
-                                
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="main-links"><a href="#">Men Slip On Shoes Casual with Arch Support Insoles</a></h3>
-                                            <div class="rating">
-         
-                                                <div class="mini-text">
-                                                    <p>
-                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita maxime nihil, cupiditate laboriosam corrupti commodi quae? Vitae laudantium iusto quam?
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="price">
-                                                <span class="current">s./29.90</span>
-                                            <button type="button">comprar</button>
-                                            </div>
-                                    
-                                        </div>
-                                    </div>
-                                    <div class="item"
-                                        data-product-id="16" 
-                                        data-product-name="producto en promoción" 
-                                        data-product-price="29.90">
-                                        <div class="media">
-                                            <div class="thumbnail object-cover">
-                                                <a href="#">
-                                                    <img src="../assets/img/teti-perry-sustituto-lacteo-conejo-120g-oferta.jpeg" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
-                                                </a>
-                                            </div>
-                          
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="main-links"><a href="#">Womens Lightweight Something</a></h3>
-                                            <div class="rating">
-                   
-                                                <div class="mini-text">
-                                                    <p>
-                                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit odit recusandae quas fuga molestiae voluptatibus. Quia debitis facilis maiores, voluptatibus sequi nihil aspernatur delectus dicta dolores sint optio eos explicabo quas aliquid placeat corrupti nemo! Distinctio quis, dolorem dicta exercitationem, quasi pariatur perspiciatis aut ex nesciunt ullam enim aliquam. Deserunt incidunt obcaecati eius ab autem aut repellat expedita quis blanditiis!
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="price">
-                                                <span class="current">s./29.90</span>
-                                             <button type="button">comprar</button>
-                                            </div>
-                                       
-                                        </div>
-                                    </div>
-                                    <div class="item"
-                                        data-product-id="17" 
-                                        data-product-name="producto en promoción" 
-                                        data-product-price="29.90">
-                                        <div class="media">
-                                            <div class="thumbnail object-cover">
-                                                <a href="#">
-                                                    <img src="../assets/img/teti-perry-sustituto-lacteo-conejo-120g-oferta.jpeg" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
-                                                </a>
-                                            </div>
-                                        
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="main-links"><a href="#">Dimmable Ceiling Light Modern</a></h3>
-                                            <div class="rating">
-                                                <div class="mini-text">
-                                                    <p>
-                                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis voluptate earum illum amet optio, temporibus sequi sapiente cupiditate sit itaque mollitia sed veritatis praesentium reprehenderit provident nostrum molestias ipsum ad nesciunt quam eos? Velit maxime nesciunt harum. Deleniti, vel. Iste commodi inventore dolorem, hic, praesentium sit veritatis accusantium deserunt officia blanditiis, ratione nesciunt consequuntur quis minima culpa consequatur exercitationem perferendis!
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="price">
-                                                <span class="current">s./29.90</span>
-                                             <button type="button">comprar</button>
-                                            </div>
-                                   
-                                        </div>
-                                    </div>
-                                    <div class="item"
-                                        data-product-id="11" 
-                                        data-product-name="producto en promoción" 
-                                        data-product-price="29.90">
-                                        <div class="media">
-                                            <div class="thumbnail object-cover">
-                                                <a href="#">
-                                                    <img src="../assets/img/patas-de-pollo-crocante-20-patas.jpeg" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
-                                                </a>
-                                            </div>
-                                    
-                                        </div>
-                                        <div class="content">
-                                            <h3 class="main-links"><a href="#">Modern Storage Cabinet with Doors or something</a></h3>
-                                            <div class="rating">
-                                             
-                                                <div class="mini-text">
-                                                   <p>
-                                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis voluptate earum illum amet optio, temporibus sequi sapiente cupiditate sit itaque mollitia sed veritatis praesentium reprehenderit provident nostrum molestias ipsum ad nesciunt quam eos? Velit maxime nesciunt harum. Deleniti, vel. Iste commodi inventore dolorem, hic, praesentium sit veritatis accusantium deserunt officia blanditiis, ratione nesciunt consequuntur quis minima culpa consequatur exercitationem perferendis!
-                                                   </p>
-                                                </div>
-                                            </div>
-                                            <div class="price">
-                                                <span class="current">s./29.90</span>
-                                             <button type="button">comprar</button>
-                                            </div>
-                                         
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <section class="features">
+            <div class="sectop flexitem">
+                <h3>
+                    <span class="title-h3"> Patas de pollo</span>
+                </h3>
+            </div>
+            <div class="products main flexwrap">
+                <div class="item"
+                        data-product-id="1" 
+                        data-product-name="Bolsa de patas de pollo de 20 piezas" 
+                        data-product-price="39.90">
+                    <div class="media">
+                        <div class="info object-cover">
+                            <a href="#">
+                                <img src="../assets/img/patas-de-pollo-bolsa.webp" alt="esto debe ser cambiado en la revision final del proyecto"  loading="lazy" >
+                            </a>
                         </div>
                     </div>
-                    
-            </div> -->
-             <div class="features">
-                <div class="container">
-                    <div class="wrapper">
-                        <section class="column">
-                            <div class="sectop flexitem">
-                                <h2  id="pollo">
-                                    <span class="circle"></span>
-                                    <span>Patas de pollo</span>
-                                </h2>
-                                <div class="second-links">
-                                   
-                                </div>
-                            </div>
-                            <div class="products main flexwrap">
-                                <div class="item"
-                                    data-product-id="1" 
-                                    data-product-name="bolsa de patas de pollo de 20 piezas" 
-                                    data-product-price="39.90">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/img/patas-de-pollo-bolsa.webp" alt="esto debe ser cambiado en la revision final del proyecto"  loading="lazy" >
-                                            </a>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="content">
-                                      
-                                        <h3><a href="#">Bolsa de patas de pollo de 20 piezas</a></h3>
-                                        <div class="price">
-                                            <span class="current">s./39.90</span>
-                                            <button type=" button">comprar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item"
-                                    data-product-id="2" 
-                                    data-product-name="patas de pollo de 1 kilo" 
-                                    data-product-price="19.90">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/img/pata-de-pollo-contenedor.webp" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
-                                            </a>
-                                        </div>
-                                     
-                                    </div>
-                                    <div class="content">
-                                     
-                                        <h3><a href="#">patas de pollo de 1 kilo</a></h3>
-                                        <div class="price">
-                                            <span class="current">s./19.90</span>
-                                            
-                                             <button type="button">comprar</button>
-                                        </div>
-                                     
-                                    </div>
-                                </div>
-                                <div class="item"
-                                data-product-id="3" 
-                                data-product-name="Patas de pollo de 2 kilos" 
-                                data-product-price="6.90">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/img/pata-de-pollo-bolsa-big.webp" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
-                                            </a>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="content">
-                                   
-                                        <h3><a href="#">Patas de pollo de 2 kilos</a></h3>
-                                        <div class="price">
-                                            <span class="current">s./6.90</span>
-                                             <button type="button">comprar</button>
-                                        </div>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-                    </section>
-                </div>  
-            </div>
-        </div>
-<!-- 
-        <div class="color-1">
-            <div class="color-2">
-                
-<section class="banner">
-  <div class="cotenedor">
-    <div class="banner-content">
-        <div class="baner-text">
-            <div class="banner-text-content">
-            <h2>Gotero Dosificador</h2>
-            <span class="span-1">
-                dosifica con precisión,<br><span class="span-2"> cuidado y amor</span>
-            </span>
-            </div>
-            
-            <div class="banner-price">
-                <span >s/26.90</span>
-
-            </div>
-            <div class="banner-button">
-            <button type="button">comprar</button>
-            </div>
-            <div class="features-container">
-            <div class="feature-item item-blue">
-                <div class="feature-icon checkmark"></div>
-                <span class="feature-text">0+ meses</span>
-            </div>
-            <div class="feature-item item-red">
-                <div class="feature-icon"><div class="ban-symbol"></div></div>
-                <span class="feature-text">No tóxico</span>
-            </div>
-            <div class="feature-item item-green">
-                <div class="feature-icon leaf-icon"></div>
-                <span class="feature-text">Fácil y fluido</span>
-            </div>
-            </div>
-        </div>
-      <div class="banner-img">
-        <div class="banner-botero">
-        <img src="../assets/img/jeringa (1).webp" alt="">
-
-        </div>        
-      </div>
-      <div class="banner-img-gato">
-        <div class="beneficios">
-          <div class="beneficio beneficio-1">
-            <div class="icono icono-dosis">
-              <span></span>
-            </div>
-            <div class="beneficio-texto">
-              <h3>DOSIFICA<br>CON PRECISIÓN</h3>
-              <p>La dosis exacta<br>para su bienestar.</p>
-            </div>
-          </div>
-          <div class="beneficio beneficio-2">
-            <div class="icono icono-seguro">
-              <span>✓</span>
-            </div>
-            <div class="beneficio-texto">
-              <h3>SEGURO<br>Y CONFIABLE</h3>
-              <p>Material no tóxico,<br>apto para mascotas</p>
-            </div>
-          </div>
-          <div class="beneficio beneficio-3">
-            <div class="icono icono-facil">
-              <span>👍</span>
-            </div>
-            <div class="beneficio-texto">
-              <h3>FÁCIL<br>DE USAR</h3>
-              <p>Práctico, cómodo<br>y seguro.</p>
-            </div>
-          </div>
-        </div>
-            <img class="img-gato" src="../assets/img/banner-gotero-gato.webp" alt="">
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-                
-<section class="banner mobile">
-  <div class="cotenedor">
-    <div class="banner-content">
-        <div class="banner-text-content">
-          <h2>Gotero Dosificador</h2>
-          <span class="span-1">
-            dosifica con precisión,<br><span class="span-2"> cuidado y amor</span>
-          </span>
-        </div>
-        
-        <div class="banner-price">
-            <span >s/26.90</span>
-
-        </div>
-        <div class="banner-button">
-          <button type="button">comprar</button>
-        </div>
-        <div class="features-container">
-          <div class="feature-item item-blue">
-            <div class="feature-icon checkmark"></div>
-            <span class="feature-text">0+ meses</span>
-          </div>
-          <div class="feature-item item-red">
-            <div class="feature-icon"><div class="ban-symbol"></div></div>
-            <span class="feature-text">No tóxico</span>
-          </div>
-          <div class="feature-item item-green">
-            <div class="feature-icon leaf-icon"></div>
-            <span class="feature-text">Fácil y fluido</span>
-          </div>
-        </div>
-      <div class="banner-img">
-        <div class="banner-botero">
-        <img src="../assets/img/jeringa (1).webp" alt="">
-        </div>        
-      </div>
-      
-    </div>
-  </div>
-</section> -->
-<section>
-<img src="../assets/img/9b032897-b407-4dcd-a7cb-d61105ba5969.png" alt="">
-</section>
-
-
-            </div>
-        </div>
-                    <div class="features">
-                <div class="container">
-                    <div class="wrapper">
-                        <section class="column">
-                            <h2 id="lacteos" class="title-h2">Sustitutos Lacteos</h2>
-                            <div class="sectop flexitem">
-                                <h2 >
-                                    <span class="circle"></span>
-                                    <span id="felinos">Felinos</span>
-                                </h2>
-                                <div class="second-links">
-                                   
-                                </div>
-                            </div>
-                            <div class="products main flexwrap">
-                                <div class="item"
-                                    data-product-id="3" 
-                                    data-product-name="Sustituto Lacteo Gato 250g" 
-                                    data-product-price="39.90">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/img/lac-gat-250.webp" alt="esto debe ser cambiado en la revision final del proyecto"  loading="lazy" >
-                                            </a>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="content">
-                                      
-                                        <h3><a href="#">Sustituto Lacteo de 250g más dosificador</a></h3>
-                                        <div class="price">
-                                            <span class="current">s./39.90</span>
-                                            <button type="button">comprar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item"
-                                    data-product-id="2" 
-                                    data-product-name="Sustituto Lacteo Gato 120g" 
-                                    data-product-price="19.90">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/img/lac-gat-120.webp" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
-                                            </a>
-                                        </div>
-                                     
-                                    </div>
-                                    <div class="content">
-                                     
-                                        <h3><a href="#">Sustituto Lacteo de 120g más dosificadorr</a></h3>
-                                        <div class="price">
-                                            <span class="current">s./19.90</span>
-                                             <button type="button">comprar</button>
-                                        </div>
-                                     
-                                    </div>
-                                </div>
-                                <div class="item"
-                                data-product-id="1" 
-                                data-product-name="Sustituto Lacteo Gato 30g" 
-                                data-product-price="6.90">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/img/lac-gat-30.webp" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
-                                            </a>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="content">
-                                   
-                                        <h3><a href="#">Sustituto Lacteo de 30g </a></h3>
-                                        <div class="price">
-                                            <span class="current">s./6.90</span>
-                                             <button type="button">comprar</button>
-                                        </div>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                   
-                        <section class="column" id="caninos">
-                            <div class="sectop flexitem">
-                                <h2><span class="circle"></span><span>Caninos</span></h2>
-                                <div class="second-links">
-
-                                </div>
-                            </div>
-                            <div class="products main flexwrap">
-                                <div class="item"
-                                data-product-id="4" 
-                                data-product-name="Sustituto Lacteo Perro 250g" 
-                                data-product-price="309.90">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/img/lac-perro-250.webp" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
-                                            </a>
-                                        </div>
-                                     
-                                    </div>
-                                    <div class="content">
-                                    
-                                        <h3><a href="#">Sustituto Lacteo de 250g más dosificador</a></h3>
-                                        <div class="price">
-                                            <span class="current">s./309.90</span>
-                                             <button type="button">comprar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item"
-                                data-product-id="4" 
-                                data-product-name="Sustituto Lacteo Perro 120g" 
-                                data-product-price="19.90">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/img/lac-perro-120.webp" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
-                                            </a>
-                                        </div>
-                                     
-                                    </div>
-                                    <div class="content">
-                                    
-                                        <h3><a href="#">Sustituto Lacteo de 120g más dosificador</a></h3>
-                                        <div class="price">
-                                            <span class="current">s./19.90</span>
-                                             <button type="button">comprar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item"
-                                data-product-id="4" 
-                                data-product-name="Sustituto Lacteo Perro 30g" 
-                                data-product-price="6.90">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/img/lac-perro-30.webp" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
-                                            </a>
-                                        </div>
-                                     
-                                    </div>
-                                    <div class="content">
-                                    
-                                        <h3><a href="#">Sustituto Lacteo de 30g más dosificador</a></h3>
-                                        <div class="price">
-                                            <span class="current">s./6  .90</span>
-                                             <button type="button">comprar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="column" id="conejo">
-                            <div class="sectop flexitem">
-                                <h2><span class="circle"></span><span>Conejo</span></h2>
-                                <div class="second-links">
-                                </div>
-                            </div>
-                            <div class="products main flexwrap">
-                                <div class="item"
-                                data-product-id="7" 
-                                data-product-name="Sustituto Lacteo Conejo 250g" 
-                                data-product-price="39.90">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/img/lac-cone-250.webp" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
-                                            </a>
-                                        </div>
-            
-                                    </div>
-                                    <div class="content">
-                         
-                                        <h3><a href="#">Sustituto Lacteo de 250g más dosificador</a></h3>
-                                        <div class="price">
-                                            <span class="current">s./39.90</span>
-                                             <button type="button">comprar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item"
-                                data-product-id="8" 
-                                data-product-name="Sustituto Lacteo Conejo 120g" 
-                                data-product-price="19.90">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/img/lac-cone-120.webp" loading="lazy" alt="esto debe ser cambiado en la revision final del proyecto">
-                                            </a>
-                                        </div>
-                                  
-                                    </div>
-                                    <div class="content">
-                                        
-                                        <h3><a href="#">Sustituto Lacteo de 120g más dosificadorr</a></h3>
-                                        <div class="price">
-                                            <span class="current">s./19.90</span>
-                                             <button type="button">comprar</button>
-                                        </div>
-                                      
-                                    </div>
-                                </div>
-                                <div class="item"
-                                data-product-id="9" 
-                                data-product-name="Sustituto Lacteo Conejo 30g" 
-                                data-product-price="6.90">
-                                    <div class="media">
-                                        <div class="thumbnail object-cover">
-                                            <a href="#">
-                                                <img src="../assets/img/lac-cone-30.webp" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
-                                            </a>
-                                        </div>
-                                       </div>
-                                    <div class="content">
-                                     
-                                        <h3><a href="#">Sustituto Lacteo de 30g </a></h3>
-                                        <div class="price">
-                                            <span class="current">s./6.90</span>
-                                             <button type="button">comprar</button>
-                                        </div>
-                                      
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </section>
+                    <div class="content">
+                        <h3>
+                            <a href="#">Bolsa de patas de pollo de 20 piezas</a>
+                        </h3>
+                        <div class="price">
+                            <span class="current">s./39.90</span>
+                            <button type=" button">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"
+                    data-product-id="2" 
+                    data-product-name="patas de pollo de 1 kilo" 
+                    data-product-price="19.90">
+                    <div class="media">
+                        <div class="info object-cover">
+                            <a href="#">
+                                <img src="../assets/img/pata-de-pollo-contenedor.webp" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3><a href="#">patas de pollo de 1 kilo</a></h3>
+                        <div class="price">
+                            <span class="current">s./19.90</span>
+                                <button type="button">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"
+                    data-product-id="3" 
+                    data-product-name="Patas de pollo de 2 kilos" 
+                    data-product-price="6.90">
+                    <div class="media">
+                        <div class="info object-cover">
+                            <a href="#">
+                                <img src="../assets/img/pata-de-pollo-bolsa-big.webp" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3><a href="#">Patas de pollo de 2 kilos</a></h3>
+                        <div class="price">
+                            <span class="current">s./6.90</span>
+                                <button type="button">comprar</button>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
+        <section class="content-gotero">
+            <a href="">
+                <picture>
+                    <source srcset="../assets/mobile.jpg" media="(max-width: 601px)">
+                    <img class="item-gotero" src="../assets/img/9b032897-b407-4dcd-a7cb-d61105ba5969.png" alt="">
+                </picture>
+            </a>
+        </section>
 
-           
-
-
+        <section class="features">
+            <h2 id="lacteos" class="title-h2">Sustitutos Lacteos</h2>
+            <div class="flexitem">
+                <h3><span class="title-h3">Gato</span></h3>                
+            </div>
+            <div class="products main flexwrap">
+                <div class="item"
+                    data-product-id="4" 
+                    data-product-name="Sustituto Lacteo Gato 250g" 
+                    data-product-price="39.90">
+                    <div class="media">
+                        <div class="info object-cover">
+                            <a href="#">
+                                <img src="../assets/img/lac-gat-250.webp" alt="esto debe ser cambiado en la revision final del proyecto"  loading="lazy" >
+                            </a>
+                        </div>                     
+                    </div>
+                    <div class="content">           
+                        <h3><a href="#">Sustituto Lacteo de 250g</a></h3>
+                        <div class="price">
+                            <span class="current">s./39.90</span>
+                            <button type="button">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"
+                    data-product-id="5" 
+                    data-product-name="Sustituto Lacteo Gato 120g" 
+                    data-product-price="19.90">
+                    <div class="media">
+                        <div class="info object-cover">
+                            <a href="#">
+                                <img src="../assets/img/lac-gat-120.webp" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content">  
+                        <h3><a href="#">Sustituto Lacteo de 120g</a></h3>
+                        <div class="price">
+                            <span class="current">s./19.90</span>
+                            <button type="button">comprar</button>
+                        </div>  
+                    </div>
+                </div>
+                <div class="item"
+                    data-product-id="6" 
+                    data-product-name="Sustituto Lacteo Gato 30g" 
+                    data-product-price="6.90">
+                    <div class="media">
+                        <div class="info object-cover">
+                            <a href="#">
+                                <img src="../assets/img/lac-gat-30.webp" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
+                            </a>
+                        </div>                
+                    </div>
+                    <div class="content">       
+                        <h3><a href="#">Sustituto Lacteo de 30g </a></h3>
+                        <div class="price">
+                            <span class="current">s./6.90</span>
+                            <button type="button">comprar</button>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features">
+            <h3 class="sectop flexitem">
+                <span class="title-h3">Perro</span></h3>
+            </h3>
+            <div class="products main flexwrap">
+                <div class="item"
+                    data-product-id="7" 
+                    data-product-name="Sustituto Lacteo Perro 250g" 
+                    data-product-price="309.90">
+                    <div class="media">
+                        <div class="info object-cover">
+                            <a href="#">
+                                <img src="../assets/img/lac-perro-250.webp" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
+                            </a>
+                        </div>
+                    
+                    </div>
+                    <div class="content">
+                    
+                        <h3><a href="#">Sustituto Lacteo de 250g más dosificador</a></h3>
+                        <div class="price">
+                            <span class="current">s./309.90</span>
+                            <button type="button">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"
+                    data-product-id="8" 
+                    data-product-name="Sustituto Lacteo Perro 120g" 
+                    data-product-price="19.90">
+                    <div class="media">
+                        <div class="info object-cover">
+                            <a href="#">
+                                <img src="../assets/img/lac-perro-120.webp" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
+                            </a>
+                        </div>
+                    
+                    </div>
+                    <div class="content">
+                    
+                        <h3><a href="#">Sustituto Lacteo de 120g más dosificador</a></h3>
+                        <div class="price">
+                            <span class="current">s./19.90</span>
+                            <button type="button">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"
+                    data-product-id="9" 
+                    data-product-name="Sustituto Lacteo Perro 30g" 
+                    data-product-price="6.90">
+                    <div class="media">
+                        <div class="info object-cover">
+                            <a href="#">
+                                <img src="../assets/img/lac-perro-30.webp" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3><a href="#">Sustituto Lacteo de 30g más dosificador</a></h3>
+                        <div class="price">
+                            <span class="current">s./6  .90</span>
+                            <button type="button">comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features" id="conejo">
+            <div class="sectop flexitem">
+                <h3><span class="title-h3">Conejo</span></h3>
+                <div class="second-links">
+                </div>
+            </div>
+            <div class="products main flexwrap">
+                <div class="item"
+                    data-product-id="10" 
+                    data-product-name="Sustituto Lacteo Conejo 250g" 
+                    data-product-price="39.90">
+                    <div class="media">
+                        <div class="info object-cover">
+                            <a href="#">
+                                <img src="../assets/img/lac-cone-250.webp" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3><a href="#">Sustituto Lacteo de 250g más dosificador</a></h3>
+                        <div class="price">
+                            <span class="current">s./39.90</span>
+                            <button type="button">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"
+                    data-product-id="11" 
+                    data-product-name="Sustituto Lacteo Conejo 120g" 
+                    data-product-price="19.90">
+                    <div class="media">
+                        <div class="info object-cover">
+                            <a href="#">
+                                <img src="../assets/img/lac-cone-120.webp" loading="lazy" alt="esto debe ser cambiado en la revision final del proyecto">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3><a href="#">Sustituto Lacteo de 120g más dosificadorr</a></h3>
+                        <div class="price">
+                            <span class="current">s./19.90</span>
+                            <button type="button">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"
+                    data-product-id="12" 
+                    data-product-name="Sustituto Lacteo Conejo 30g" 
+                    data-product-price="6.90">
+                    <div class="media">
+                        <div class="info object-cover">
+                            <a href="#">
+                                <img src="../assets/img/lac-cone-30.webp" alt="esto debe ser cambiado en la revision final del proyecto" loading="lazy" >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3><a href="#">Sustituto Lacteo de 30g </a></h3>
+                        <div class="price">
+                            <span class="current">s./6.90</span>
+                            <button type="button">comprar</button>
+                        </div>
+                    </div>
+                </div>                    
+            </div>
+        </section>
         <footer>
             <div class="footer-info">
                 <div class="container">
@@ -888,6 +417,7 @@
                 </div>
             </div>
         </footer>
+            </div>
 
         <!-- <div class="search-bottom desktop-hide">
             <div class="container">
@@ -929,7 +459,6 @@
 </div>
 </div>
         <div class="overlay"></div>
-    </div>
 
     <!-- ============================================
      MODAL DE PRODUCTO
@@ -951,7 +480,8 @@
         </div>
     </div>
 </div>     
-     
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
